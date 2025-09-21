@@ -21,8 +21,8 @@ public interface TodoRepository extends JpaRepository<Todo, Long>, TodoQueryRepo
                           @Param("startDate") LocalDateTime startDate,
                           @Param("endDate") LocalDateTime endDate);
 
-    @Query("SELECT t FROM Todo t " +
-            "LEFT JOIN t.user " +
-            "WHERE t.id = :todoId")
-    Optional<Todo> findByIdWithUser(@Param("todoId") Long todoId);
+    //@Query("SELECT t FROM Todo t " +
+    //        "LEFT JOIN t.user " +
+    //        "WHERE t.id = :todoId")
+    //Optional<Todo> findByIdWithUser(@Param("todoId") Long todoId);
 }

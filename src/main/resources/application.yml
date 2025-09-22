@@ -15,3 +15,6 @@ spring:
 jwt:
   secret:
     key: ${JWT_SECRET_KEY}
+#    whiteList:
+#      - /auth/signup
+#      - /auth/signin
